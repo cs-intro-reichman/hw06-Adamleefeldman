@@ -18,7 +18,10 @@ public class Runigram {
 		Color[][] imageOut;
 
 		// Tests the horizontal flipping of an image:
-		imageOut = flippedHorizontally(tinypic);
+		//imageOut = flippedHorizontally(tinypic);
+		//imageOut = flippedVertically(tinypic);
+		//imageOut = grayScaled(tinypic);
+		imageOut = scaled(tinypic, 3, 5);
 		System.out.println();
 		print(imageOut);
 		
@@ -50,7 +53,7 @@ public class Runigram {
 					image[i][j] = new Color(redVal, greenVal, blueVal);
 				}
 			}
-		//}
+		
 		return image;
 	}
 
